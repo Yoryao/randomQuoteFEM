@@ -1,20 +1,18 @@
 console.log("app working")
 
+let initialQuote = '"It is easy to sit up and take notice, what´s difficult is getting up and taking action"'
 
-            let number = document.getElementById("adviceNumber")
-            let quote = document.getElementById("quote");
+let number = document.getElementById("adviceNumber")
+let quote = document.getElementById("quote");
 let dice = document.getElementsByTagName("img");
 
 let randomNumber = 0;
 
 
 function askAdvice() {
-    console.log("Boton Presionado.")
-
     randomNumber = Math.random()*240;
     randomNumber = Math.floor(randomNumber);
 
-    console.log(randomNumber);
 
     fetch("https://api.adviceslip.com/advice/" + randomNumber)
         .then((res) => res.json())
@@ -24,17 +22,7 @@ function askAdvice() {
             let adviceQuote = objeto.advice;
 
             number.innerText = adviceId;
-            quote.innerText = adviceQuote;
-
-
-
-        })
-    
-
-
-
+            quote.innerText = '"'+adviceQuote + '"';
+        }
+    )
 }
-
-
-
-

@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Advice generator app</title>
-  
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
-</head>
-<body>
-
-  <div class="mainContainer">
-
-    <p class="adviceParagrapah">ADVICE <span id="adviceNumber">###</span></p>
-
-    <h1 id="quote" class="Main Advice"> &&& && &&& <br> &&& && &&& </h1>
-    
-    <button onclick="askAdvice()"><img id="diceImg"src="./images/icon-dice.svg"  alt=" dice">
-    </button>
-
-  </div>
-  
-  
-  <script src="./app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <p class="adviceParagrapah">ADVICE #<span id="adviceNumber">117</span></p>
+      <h2 id="quote" class="Main Advice">
+        "It is easy to sit up and take notice, what´s difficult is getting up and taking action"
+      </h2>
+      <img id="imgLineMobile" class="" src="./images/pattern-divider-mobile.svg" alt="divisor line">
+      <img id="imgLineDesktop" class="hidden" src="./images/pattern-divider-desktop.svg" alt="divisor line">
+      <button onclick="askAdvice()">
+        <img id="diceImg" src="./images/icon-dice.svg" alt=" dice" />
+      </button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
