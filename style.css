@@ -35,7 +35,7 @@ p {
   font-size:medium;
 }
 
-h2 {
+h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +93,7 @@ button {
     margin-top: 5%;
   }
 
-  h2 {
+  h1 {
     display: flex;
     text-align: center;
     text-rendering: auto;
