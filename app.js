@@ -22,7 +22,7 @@ function askAdvice() {
             let adviceQuote = objeto.advice;
 
             number.innerText = adviceId;
-            quote.innerText = '"'+adviceQuote + '"';
+            quote.innerText = '"'+ adviceQuote + '"';
         }
     )
 }
