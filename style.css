@@ -1,26 +1,26 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   height: 100vh;
   flex-wrap: nowrap;
-  font-family: "Manrope", sans-serif;
   background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
 }
 
 .mainContainer {
   position: relative;
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   text-align: center;
   height: 45%;
   width: 90%;
-  background-color: hsl(217, 19%, 24%);
   border-radius: 15px;
+  background-color: hsl(217, 19%, 24%);
 }
 
 p {
@@ -37,14 +37,14 @@ p {
 
 h2 {
   display: flex;
-  margin-top: 0px;
   align-items: center;
   justify-content: center;
+  margin-top: 0px;
   width: 90%;
   max-height: 45%;
   min-height: 45%;
-  font-size: 24px;
   color: hsl(193, 38%, 86%);
+  font-size: 24px;
 }
 
 #imgLineMobile {
@@ -64,16 +64,16 @@ img {
 }
 
 button {
-  border: none;
-  background-color: hsl(150, 100%, 66%);
-  display: flex;
   position: absolute;
   bottom: -35px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
   width: 70px;
   height: 70px;
+  border-radius: 100%;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
 }
 
 @media screen and (width > 375px) {
@@ -82,11 +82,11 @@ button {
   }
   
   .mainContainer {
-    height: 45%;
-    width: 50%;
     display: flex;
     text-align: center;
     align-items: center;
+    width: 50%;
+    height: 45%;
   }
   
   p {
@@ -94,13 +94,13 @@ button {
   }
 
   h2 {
+    display: flex;
     text-align: center;
     text-rendering: auto;
-    display: flex;
     width: 90%;
     height: 40%;
-    font-size: 24px;
     color: hsl(193, 38%, 86%);
+    font-size: 24px;
     text-align: center;
   }
   
@@ -110,15 +110,15 @@ button {
 
   #imgLineDesktop {
     display: unset;
+    width: 90%;
     max-height: 5%;
     min-height: 5%;
-  width: 90%;
-  padding-bottom: 20%;
+    padding-bottom: 20%;
   }
 
   button:hover {
     cursor: pointer;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-box-shadow: 0px 0px 25px 3px  hsl(150, 100%, 66%);
+  box-shadow: 0px 0px 25px 3px  hsl(150, 100%, 66%);
   }
 }
